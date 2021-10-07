@@ -1,0 +1,141 @@
+<!Doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Backtracking</h1>
+<p>Copyright ©2002 by David Matuszek</p>
+<p>Backtracking is a form of recursion.
+    <p>The usual  <em> scenario </em>is that you are faced with a <i>number</i> of options,<br> and you must choose one of these.<br> After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.</p>
+</p>
+<p>Conceptually, you <sub>start</sub> at the <sup>root</sup> of a tree; the <strong> probably </strong>has some good <b>leaves </b> and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
+<p>Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found.</p>
+<p>This needs an example.</p>
+<img src="treesearch.gif" alt="">
+<hr>
+<ol>
+    <li><ins> at Root</ins>, your<del> options</del> are A and B.<strike> You choose A</strike>.</li>
+    <li>At A, your options are C and D. You choose C.</li>
+    <li>C is bad. Go back to A.</li>
+</ol>
+<ul>
+    <li>Starting at Root, your options are A and B. You choose A</li>
+    <li>At A, your options are C and D. You choose C.</li>
+    <li>C is bad. Go back to A.</li>
+</ul>
+<pre>
+    boolean solve(Node n) {
+        if n is a leaf node {
+            if the leaf is a goal node, return true
+            else return false
+        } else {
+            for each child c of n {
+                if solve(c) succeeds, return true
+            }
+            return false
+        }
+    }
+</pre>
+<pre>
+    int main()
+    {
+        int a;
+        int b; 
+        int c=a+b;
+        retrun 0;
+    }
+</pre>
+<code>
+    int main()
+    {
+        int a;
+        int b; 
+        int c=a+b;
+        retrun 0;
+    }
+</code>
+<a href="https://www.google.co.in/">Go to Google</a>
+<a href="author.html">About ther author</a>
+<a href="https://www.prepbytes.com/">Go the prepbytes</a>
+
+<table border="1px" cellpadding="10px">
+    <thead>
+    <tr>
+        <th> </th>
+        <th>2 by 3 map</th>
+        <th>3 by 3 map</th>
+        <th>2 by 4 map</th>
+
+    </tr>
+</thead>
+    <tbody>
+        <tr>
+            <td>Method 1:</td>
+            <td>60 ms.</td>
+            <td>940 ms.</td>
+            <td>60530 ms. (1 minute)</td>
+        </tr>
+
+        <tr>
+            <td>Method 2:</td>
+            <td>0ms.</td>
+            <td colspan="2">0 ms.</td>
+            <td>0 ms.)</td>
+        </tr>
+    </tbody>
+</table >
+
+<table border="2px" align="center">
+    <thead>
+        <tr>
+       <th rowspan="2"> method</th>
+        <th>hello</th>
+        <th rowspan="2">method 3</th>
+        </tr>
+        <tr>
+            <th>Raman</th>
+        </tr>
+    </thead>
+</table>
+
+<table border="2px solid blue" cellpadding="6" width="300px" height="300px" cellspacing="0" border-spacing="2px">
+  <tbody>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    <iframe width="500" height="300"  
+src="https://www.youtube.com/embed/rOEHTlLFCec" title="YouTube video player"
+align="center"
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<iframe src="https://www.prepbytes.com/" scroling frameborder="0" width="100%" height="300px" ></iframe>
+
+</html>
+
+<!-- This is comment -- select all and using ctrl+? key press to comment i html>
