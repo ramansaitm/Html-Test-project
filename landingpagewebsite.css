@@ -126,3 +126,47 @@ img {
 {
     margin-left: auto;
 }
+
+
+ @media only screen and (max-width: 600px)
+{
+    #section-b ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: space-around;
+    }
+    #section-b li{
+        background: white;
+        color: #333;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #section-d
+{
+ display: block;
+}
+#section-d .box1 .box2
+{
+  background-color:gray;
+}
+.box1{
+    padding:1em
+}.box2{
+    padding:1em
+}
+
+#footer div:last-child {
+
+padding: 10px;
+}
+#footer {
+    display: block;
+    background-color: black;
+    padding: 2em;
+}
+#section-d .box1 {
+    background-color: #530975;
+}
+}
